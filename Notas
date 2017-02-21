@@ -1,0 +1,18 @@
+Soma = 0
+cont = 0
+Notas = []
+Qnt = int(input('Digite a quantidade de provas: '))
+while cont < Qnt:
+    NotaX = int(input('Nota %d: ' %(cont+1)))
+    Notas.append(NotaX)
+    Soma += NotaX
+    cont += 1
+print(Notas)
+
+Media = (Soma/Qnt)
+
+if (Media <= 7.00):
+    print('\nAluno REPROVADO!')
+else:
+    print('\nAluno APROVADO!')
+print("Media: %5.2f" %Media)
